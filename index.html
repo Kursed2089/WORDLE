@@ -137,7 +137,6 @@ body.dark {
   user-select: none;
   text-transform: uppercase;
   font-size: 14px;
-  
 
   touch-action: manipulation; 
 }
@@ -270,13 +269,15 @@ body.dark {
 
   <div id="keyboard"></div>
 </div>
-  
+
+<script>
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/WORDLE/sw.js")
     .then(() => console.log("Service Worker Active - Offline Mode Initialised"))
     .catch((err) => console.log("Service worker registration failed", err));
 }
-<script>
+
 let word = "";
 let tries = 0;
 let currentGuess = "";
@@ -429,7 +430,6 @@ async function isValid(w) {
     if (res.status === 429) return true;
     return res.ok;
   } catch (e) {
-    // If offline and check fails, allow fallback validation
     return true;
   }
 }
