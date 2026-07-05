@@ -1,0 +1,16 @@
+{
+  "short_name": "Wordle UK",
+  "name": "Wordle UK Offline",
+  "icons": [
+    {
+      "src": "https://kursed2089.github.io/WORDLE/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/WORDLE/",
+  "background_color": "#121213",
+  "theme_color": "#6aaa64",
+  "display": "standalone",
+  "orientation": "portrait"
+}
